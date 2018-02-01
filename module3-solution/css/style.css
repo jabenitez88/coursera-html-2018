@@ -10,7 +10,7 @@ html{
 }
 
 h1 {
-  
+
   font-weight: bold;
   font-size: 1.75em;
   margin-top: 0px;
@@ -48,6 +48,7 @@ p {
 .container-jabe{
 
 }
+.navbar-nav{padding-top:0px;}
 .navbar-brand{
   padding:0px;
 }
