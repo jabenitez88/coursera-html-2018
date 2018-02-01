@@ -1,0 +1,85 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+
+html{
+  font-family: Helvetica;
+  font-size:15px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-align: right;
+  border: 1px solid black;
+  border-top: 0px;
+  border-right: 0px;
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  float: right;
+
+}
+
+p {
+  display:inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  width:100%;
+  padding:20px;
+  color: #000;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+#sec-1 h2{color:#000;background:#d59898;}
+#sec-2 h2{color:#fff;background:#c14543;}
+#sec-3 h2{color:#000;background:#e5d198;}
+
+
+.col-lg-4 {
+  background:#999999;
+  margin:10px;
+  border:1px solid #000;
+  float: left;
+  width: calc(33.3% - 20px);
+}
+
+
+@media (min-width: 992px){
+  .col-lg-4 {
+    width: 32%;
+    width: calc(33.3% - 20px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: calc(50% - 20px);
+  }
+  .col-md-12 {
+    width: calc(100% - 20px);
+  }
+
+}
+
+/********** Little devices only **********/
+@media (max-width: 767px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    width: calc(100% - 20px);
+    border:2px solid #000 !important;
+    margin-bottom:20px;
+  }
+}
