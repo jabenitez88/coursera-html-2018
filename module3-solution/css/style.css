@@ -1,0 +1,137 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+
+html{
+  font-family: Helvetica;
+  font-size:15px;
+}
+
+h1 {
+  
+  font-weight: bold;
+  font-size: 1.75em;
+  margin-top: 0px;
+  line-height:50px;
+  color: #000;
+}
+
+.container-jabe a{
+  color: #000;
+}
+.container-jabe h1{
+
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  color:#000;
+}
+
+p {
+  display:inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  width:100%;
+  padding:0px 5px;
+  color: #000;
+}
+
+.container-jabe{
+
+}
+.navbar-brand{
+  padding:0px;
+}
+
+.row {
+  width: 100%;
+  margin:0px;
+}
+.navbar-header{
+  background:#999;
+  padding:0px 20px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border-top:0px;
+  border-color:#000;
+}
+#nav-list li{
+  border-top:1px solid #000;
+
+}
+#nav-list li a{
+  color: #000;
+}
+#nav-list li a:hover{
+  color: #999;
+}
+#header-nav{
+  background:#fff;
+  border-top:0px;
+  border-left:0px;
+  border-right:0px;
+  border-color:#000;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background:#000;
+}
+.navbar-default .navbar-toggle{
+  border-color:#000;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background:#999;
+  border-color:#ddd;
+}
+.navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar{
+  background: #ddd;
+}
+.col-lg-4 {
+  background:#999999;
+  margin:10px;
+  border:1px solid #000;
+  float: left;
+  width: calc(33.3% - 20px);
+}
+
+
+@media (min-width: 992px){
+  #header-nav{background:#999;}
+  #collapsable-nav{display:none !important;}
+  .col-lg-4 {
+    width: calc(33.3% - 20px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #collapsable-nav{display:none !important;}
+  #header-nav{background:#999;}
+  .col-md-6 {
+    width: calc(50% - 20px);
+  }
+  .col-md-12 {
+    width: calc(100% - 20px);
+  }
+
+}
+
+/********** Little devices only **********/
+@media (max-width: 767px) {
+  #collapsable-nav-prev{
+    display: block !important;
+  }
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    width: calc(100% - 20px);
+    border:1px solid #000 !important;
+    margin-bottom:20px;
+  }
+}
